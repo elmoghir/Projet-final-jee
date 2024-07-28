@@ -1,9 +1,6 @@
 package springang.ebankbackend.web;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import springang.ebankbackend.dtos.AccountHistoryDTO;
 import springang.ebankbackend.dtos.AccountOperationDTO;
 import springang.ebankbackend.dtos.BankAccountDTO;
@@ -13,6 +10,7 @@ import springang.ebankbackend.services.BankAccountService;
 import java.util.List;
 
 @RestController
+@CrossOrigin("*")
 public class BankAccountRestAPI {
     private BankAccountService bankAccountService;
 
